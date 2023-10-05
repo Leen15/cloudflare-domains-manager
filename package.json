@@ -1,0 +1,25 @@
+{
+  "name": "cloudflare-domains-manager",
+  "version": "1.0.0",
+  "description": "An easy to use tool to manage your cloudflare domains",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "update": "npx tsc && node dist/index.js action=update",
+    "list": "npx tsc && node dist/index.js action=list"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cloudflare": "^2.9.1",
+    "colors": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "js-yaml": "^4.1.0",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/cloudflare": "^2.7.11",
+    "@types/js-yaml": "^4.0.6",
+    "@types/node": "^20.8.2"
+  }
+}
