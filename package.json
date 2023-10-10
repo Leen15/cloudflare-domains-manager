@@ -1,7 +1,8 @@
 {
   "name": "cloudflare-domains-manager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An easy to use tool to manage your cloudflare domains",
+  "homepage": "https://github.com/Leen15/cloudflare-domains-manager",
   "repository": {
     "type": "git",
     "url": "https://github.com/Leen15/cloudflare-domains-manager.git"
