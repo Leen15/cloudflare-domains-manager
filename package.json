@@ -4,9 +4,7 @@
   "description": "An easy to use tool to manage your cloudflare domains",
   "main": "dist/index.js",
   "scripts": {
-    "build": "npx tsc",
-    "update": "npx tsc && node dist/index.js action=update",
-    "list": "npx tsc && node dist/index.js action=list"
+    "build": "npx tsc"
   },
   "author": "",
   "license": "MIT",

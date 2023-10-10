@@ -1,0 +1,28 @@
+load_balancers:
+  - example-lb: &example-lb example-lb.your-infrastructure.com
+  - example-lb-ip: &example-lb-ip 172.0.0.10
+domains:
+  - name: example.com
+    zone_id: Y0UR_Z0N3_1D
+    dns_records:
+      - name: example.com
+        type: CNAME
+        content: *example-lb
+        ttl: 1
+        proxied: true
+      - name: test.example.com
+        type: A
+        content: *example-lb-ip
+        ttl: 1
+        proxied: true
+      - name: www.example.com
+        type: CNAME
+        content: *example-lb
+        ttl: 1
+        proxied: true
+      - name: tobedeleted.example.com
+        type: CNAME
+        deleted: true
+        content: *example-lb
+        ttl: 1
+        proxied: true
