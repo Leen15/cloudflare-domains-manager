@@ -1,6 +1,6 @@
 ### Cloudflare Domains Manager
 
-This tool is helpful to manage cloudflare domains using a versionate file.<br/>
+This tool is helpful to manage cloudflare domains using a versionated file.<br/>
 
 ## How to use?
 
